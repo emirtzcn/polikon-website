@@ -3,7 +3,7 @@ export const IMG = {
   logo: {
     main: '/images/logo/Polikon logo.png',
     white: '/images/logo/logo beyaz.png',
-    mark: '/images/logo/logo sadece p.png',
+    mark: '/images/logo/P LOGO.png',
   },
   factory: {
     team: '/images/factory/team photo.jpg',
