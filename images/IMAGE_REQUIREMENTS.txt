@@ -1,0 +1,132 @@
+ELITEPACK FILMS WEBSITE - GÖRSEL GEREKSİNİMLERİ
+================================================
+
+Bu dosya, website'in tam olarak çalışması için gerekli görselleri listeler.
+
+ÖNERILEN BOYUTLAR VE FORMATLAR
+-------------------------------
+- Format: JPG (yüksek kalite, 80-90% sıkıştırma)
+- Renk Profili: sRGB
+- Optimizasyon: Web için optimize edilmiş
+- Alt metin: Her görsel için açıklayıcı metin eklenmelidir
+
+ANA SAYFA GÖRSELLERİ
+--------------------
+1. hero1.jpg (1920x1080px)
+   Açıklama: Ana hero slider birinci slayt
+   İçerik: Modern film üretim tesisi veya yüksek teknoloji ekipman
+   Ton: Profesyonel, teknolojik, parlak makineler
+
+2. hero2.jpg (1920x1080px)
+   Açıklama: Ana hero slider ikinci slayt
+   İçerik: Çevre dostu üretim, yeşil enerji, geri dönüşüm
+   Ton: Doğal, yeşil tonlar, sürdürülebilirlik vurgusu
+
+3. hero3.jpg (1920x1080px)
+   Açıklama: Ana hero slider üçüncü slayt
+   İçerik: Global harita, dünya çapında dağıtım, lojistik
+   Ton: Global, modern, bağlantılar
+
+4. bopp-films.jpg (800x600px)
+   Açıklama: BOPP film ürünleri kartı
+   İçerik: Şeffaf BOPP film ruloları, parlak yüzey
+   Ton: Temiz, şeffaf, profesyonel
+
+5. cpp-films.jpg (800x600px)
+   Açıklama: CPP film ürünleri kartı
+   İçerik: CPP film ruloları, esnek ambalaj örnekleri
+   Ton: Modern, versatil, kullanım örnekleri
+
+6. specialty-films.jpg (800x600px)
+   Açıklama: Özel filmler kartı
+   İçerik: Metalize veya özel kaplı filmler, farklı renkler
+   Ton: Teknolojik, premium, yenilikçi
+
+7. sustainability.jpg (1200x800px)
+   Açıklama: Sürdürülebilirlik bölümü ana görseli
+   İçerik: Yeşil fabrika, solar paneller, geri dönüşüm prosesi
+   Ton: Çevre dostu, doğal ışık, yeşil tonlar
+
+8. news1.jpg (800x600px)
+   Açıklama: Haber kartı - Yenilik
+   İçerik: Laboratuvar, Ar-Ge, bilimsel ekipman
+   Ton: İnovatif, teknolojik, gelecekçi
+
+9. news2.jpg (800x600px)
+   Açıklama: Haber kartı - Kurumsal
+   İçerik: Modern fabrika binası, yeni tesis
+   Ton: Profesyonel, büyüme, genişleme
+
+10. news3.jpg (800x600px)
+    Açıklama: Haber kartı - Sürdürülebilirlik
+    İçerik: Çevre sertifikası, yeşil enerji, doğa
+    Ton: Doğal, yeşil, sorumlu
+
+ÜRÜNLER SAYFASI GÖRSELLERİ
+---------------------------
+11. bopp-detail.jpg (1200x800px)
+    Açıklama: BOPP filmler detay görseli
+    İçerik: BOPP film üretim hattı, yakın çekim
+    Ton: Teknik, detaylı, profesyonal
+
+12. cpp-detail.jpg (1200x800px)
+    Açıklama: CPP filmler detay görseli
+    İçerik: CPP film prosesi, laminasyon
+    Ton: Üretim, kalite, hassasiyet
+
+13. specialty1.jpg (800x600px)
+    Açıklama: Bio-based filmler
+    İçerik: Doğal hammaddeler, yeşil üretim
+    Ton: Organik, doğal, çevre dostu
+
+14. specialty2.jpg (800x600px)
+    Açıklama: High barrier filmler
+    İçerik: Koruyucu ambalaj, gıda güvenliği
+    Ton: Koruma, güvenlik, uzun ömür
+
+15. specialty3.jpg (800x600px)
+    Açıklama: UV dirençli filmler
+    İçerit: Dış mekan uygulamaları, dayanıklılık
+    Ton: Güneş, dayanıklılık, koruma
+
+ALTERNATIF PLACEHOLDER ÇÖZÜMÜ
+------------------------------
+Eğer görseller henüz hazır değilse, aşağıdaki ücretsiz stok fotoğraf sitelerinden
+endüstriyel/ambalaj/üretim görselleri kullanabilirsiniz:
+
+- Unsplash.com (ticari kullanım izinli)
+- Pexels.com (ücretsiz, telif hakkı yok)
+- Pixabay.com (ücretsiz görsel bankası)
+
+Arama terimleri:
+- "factory production line"
+- "industrial manufacturing"
+- "plastic film rolls"
+- "packaging materials"
+- "green energy factory"
+- "sustainable production"
+
+RENKLENDİRME ÖNERİSİ
+-------------------
+Website koyu temalı olduğu için görsellerde:
+- Kontrastlı ışıklandırma tercih edilmeli
+- Siyah arka planlarda altın/sarı tonlar öne çıkmalı
+- Makineler ve ekipmanlar parlak ve temiz görünmeli
+- Sürdürülebilirlik görsellerinde yeşil tonlar kullanılmalı
+
+DOSYA ADLANDIRMA
+----------------
+- Küçük harfle yazın
+- Boşluk yerine tire (-) kullanın
+- Türkçe karakter kullanmayın
+- Örnek: hero-slide-1.jpg, bopp-films-detail.jpg
+
+OPTIMIZASYON ÖNERİSİ
+--------------------
+Görselleri eklemeden önce:
+1. TinyPNG.com veya Squoosh.app ile sıkıştırın
+2. Responsive versiyonlar oluşturun (mobil için küçük boyutlar)
+3. WebP formatına çevirmeyi düşünün (daha iyi sıkıştırma)
+4. Lazy loading için data-src attribute kullanın
+
+NOT: Görseller yokken CSS'deki placeholder arka plan renkleri gösterilecektir.

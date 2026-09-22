@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Yönetim/çekirdek klasörlere erişimi kapat (arama motorları için)
+Disallow: /includes/
+Disallow: /partials/
+Disallow: /dev/
+Disallow: /datasheets/
+Disallow: /_eski_html_yedek/
+Disallow: /pdf-request.php
+
+Sitemap: https://polikonfilm.com/sitemap.xml

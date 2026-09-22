@@ -1,0 +1,15 @@
+# Yerel test ortamı: PHP 8.2 (Apache). Veritabanı gerekmez.
+# Kullanım:  cd dev && docker compose up -d --build   ->  http://localhost:8080
+# Test/statik: TDS PDF'leri datasheets/ klasöründen sunulur. Sunucu işlemi yoktur.
+name: polikon-dev
+
+services:
+  web:
+    build: .
+    container_name: polikon-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ../:/var/www/html
+    environment:
+      APP_DEBUG: "1"

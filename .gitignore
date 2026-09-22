@@ -1,0 +1,18 @@
+# Gizli bilgiler — asla commit edilmez
+includes/secrets.php
+.env
+
+# Bağımlılıklar / eski dosyalar
+node_modules/
+_eski_html_yedek/
+
+# Yerel test / geçici
+dev/maillog/
+
+# İşletim sistemi / editör / yerel araç dosyaları
+.DS_Store
+**/.DS_Store
+.claude/
+
+# Yanlışlıkla images/ içine kopyalanmış uygulama paketi (site dosyası değil, ~417 MB)
+images/Visual Studio Code.app/
