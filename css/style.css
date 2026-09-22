@@ -278,6 +278,9 @@ img {
     display: none;
 }
 
+/* Ürünler açılır menüsü: "IKO" marka turuncusu */
+.dropdown-menu .nav-accent { color: #f7941e; font-weight: 700; }
+
 .dropdown-menu a:hover {
     background-color: var(--light-bg);
     color: var(--blue);

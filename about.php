@@ -55,7 +55,7 @@ $gallery = ['factory-1', 'factory-2', 'factory-3', 'factory-4', 'factory-5'];
 require __DIR__ . '/partials/header.php';
 ?>
 
-<div class="pk">
+<div class="pk pk-reveal">
     <!-- Hero -->
     <section class="pk-hero">
         <div class="pk-hero__media">

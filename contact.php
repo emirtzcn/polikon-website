@@ -10,11 +10,28 @@ $email = CONTACT_EMAIL;
 $phone_href = preg_replace('/[^0-9+]/', '', $phone);
 $map_src = 'https://www.google.com/maps?q=' . MAP_LAT . ',' . MAP_LNG . '&hl=tr&z=17&output=embed';
 
+// Başlık fotoğrafı: şirketin kendi tesis fotoğrafı (telif sorunu yok)
+$contact_hero = 'images/factory/factory-6.jpeg';
+$extra_head = <<<'HTML'
+<style>
+    /* İletişim başlığı: kenardan kenara fotoğraf, hafif karartma, beyaz metin */
+    .page-header {
+        max-width: none; width: 100%; margin: 102px 0 0;
+        height: clamp(320px, 42vh, 460px);
+        background-size: cover; background-position: center 45%;
+    }
+    .page-header::before { display: none; }
+    .page-header-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.55) 100%); }
+    .page-header-content h1 { color: #fff; }
+    .page-header-subtitle { color: rgba(255,255,255,0.88); }
+</style>
+HTML;
+
 require __DIR__ . '/partials/header.php';
 ?>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header" style="background-image: url('<?= e($contact_hero) ?>');">
         <div class="page-header-overlay"></div>
         <div class="container">
             <div class="page-header-content">

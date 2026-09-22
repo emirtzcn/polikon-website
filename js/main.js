@@ -29,6 +29,9 @@ const translations = {
     }
     if (document.readyState === 'complete') hide();
     else window.addEventListener('load', hide, { once: true });
+    // Harita iframe'i gibi geç yüklenen kaynaklar sayfayı bekletmesin: DOM hazır olduktan kısa süre sonra kapat
+    if (document.readyState !== 'loading') setTimeout(hide, 1200);
+    else document.addEventListener('DOMContentLoaded', () => setTimeout(hide, 1200), { once: true });
     setTimeout(hide, 5000); // emniyet: bir kaynak takılırsa bile sayfa açılsın
 })();
 
@@ -576,6 +579,37 @@ function initTiltImages() {
 
 initRangeBoxes();
 initTiltImages();
+
+// ===========================
+// Kaydırdıkça görünme (reveal) — .pk-reveal sayfalarında (about.php)
+// Her bölümün blokları aşağıdan yukarı doğru yumuşakça belirir; ızgara öğeleri sırayla gecikir.
+// ===========================
+function initRevealOnScroll() {
+    const root = document.querySelector('.pk-reveal');
+    if (!root) return;
+    const groups = [
+        '.section-header', '.about-intro > div', '.lead.rd-intro', '.about-intro__media', '.rd-quality__media', '.rd-quality__col',
+        '.why-us__intro', '.why-us__pillar', '.expertise-card', '.brand-story__step', '.experience-stat',
+        '.gallery-grid__item', '.pk-tech-band__content', '.pk-partnership__text', '.pk-partnership__actions'
+    ];
+    const items = root.querySelectorAll(groups.join(','));
+    if (!items.length) return;
+    // Kardeş öğeler için kademeli gecikme (ızgara efekti)
+    items.forEach((el) => {
+        el.classList.add('reveal');
+        const siblings = Array.from(el.parentElement.children).filter((c) => c.classList.contains('reveal'));
+        const idx = siblings.indexOf(el);
+        if (siblings.length > 1 && idx > 0) el.style.setProperty('--reveal-delay', `${Math.min(idx, 6) * 110}ms`);
+    });
+    if (!('IntersectionObserver' in window)) { items.forEach((el) => el.classList.add('is-visible')); return; }
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    items.forEach((el) => io.observe(el));
+}
+initRevealOnScroll();
 
 // ===========================
 // Back to Top Button

@@ -93,7 +93,8 @@ $nav_categories = get_categories();
                             </a>
                             <ul class="dropdown-menu">
                                 <?php foreach ($nav_categories as $cat): ?>
-                                    <li><a href="category.php?slug=<?= e($cat['slug']) ?>"><?= e($cat['name']) ?></a></li>
+                                    <?php $__np = explode(' ', $cat['name'], 2); ?>
+                                    <li><a href="category.php?slug=<?= e($cat['slug']) ?>"><span class="nav-accent"><?= e($__np[0]) ?></span><?= isset($__np[1]) ? ' ' . e($__np[1]) : '' ?></a></li>
                                 <?php endforeach; ?>
                             </ul>
                         </li>
